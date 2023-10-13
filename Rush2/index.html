@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
@@ -17,25 +25,26 @@
 <header>
     <!-- jusqu'a champ de recherche -->
     <section class="haut">
-        <div class="hautGauche">
-        <img id="menu" src="menu-icon.png" alt="icon hamburger du menu"></img>
-        <p id="home">HOME</p>
-        <p id="shop">SHOP</p>
+        <div class="flex">
+        <img class="mt-1 w-12 h-12" id="menu" src="menu-icon.png" alt="icon hamburger du menu"></img>
+        <p class="mr-4" id="home">HOME</p>
+        <p class="mr-4" id="shop">SHOP</p>
         <p id="magazine">MAGAZINE</p>
         </div>
         <div class="hautDroit">
-        <img id="cadis" src="icone_panier.png"></img>
+        <img class="h-10 mr-4" id="cadis" src="cart_icon.png"></img>
         <p id="logine">LOGIN</p>
         </div>
     </section>
 </header>
 <body>
+    <div class="lg:content-auto"></div>
     <!-- jusqu'a la fin des articles -->
     <div class="conteneur">
         <div class="box"> element 1</div>
         <div class="box"> 
             <section class="modele">
-            <img class="sofa" src="sofa1.jpg" alt="photo d'un sofa dans un salon">
+            <img class="h-90 w-90" src="sofa1.jpg" alt="photo d'un sofa dans un salon">
             <h1>Coombes</h1>
             <h2>LOUNGE</h2>
             <span class="fa fa-star checked"></span>
