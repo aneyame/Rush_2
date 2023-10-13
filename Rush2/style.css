@@ -1,9 +1,74 @@
 .box {
-    height: 150px;
+    height: fit-content;
+    border: solid 2px red;
 }
 
 .conteneur {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 5em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+
 }
+
+.sofa{
+    height: 90%;
+    width: 90%;
+}
+
+.haut {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hautGauche{
+    display: flex;
+}
+
+.hautDroit {
+    display: flex;
+    margin-right: -29%;
+}
+
+#menu {
+    margin-top: 1%;
+    width: 8%;
+    height: 70%;
+}
+#cadis {
+    width: 10%;
+    height: 70%;
+}
+
+#home {
+    margin-right: 2%;
+}
+
+#shop {
+    margin-right: 2%;
+}
+
+#cadis {
+    margin-right: 2%;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 70%;
+    color: grey;
+}
+
+.checked{
+    color: rgb(0, 0, 0);
+}
+span{
+    color: rgb(197, 197, 197);
+}
+
+ 
