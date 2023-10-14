@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    padding: 1%;
+}
+
 .box {
     height: fit-content;
-    border: solid 2px red;
+    border: solid 2px ;
 }
 
 .conteneur {
@@ -17,31 +21,255 @@
 .haut {
     display: flex;
     justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .hautDroit {
     display: flex;
-    margin-right: -29%;
+    align-items: center;
+}
+.dessusCadre {
+    display: flex;
+    /* align-items: right; */
+    justify-content: space-between;
+    padding: 1%;
 }
 
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 90%;
-}
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 70%;
-    color: grey;
+
+.input-field {
+    margin-left: 10%;
 }
 
+.barreSearch {
+    width: 100%;
+    margin-top: -5%;
+}
+
+label{
+    width: 100%;
+}
+
+.deroulant {
+    border-bottom: 2px solid #d3d3d3;
+   
+}
+
+.deroulant2 {
+    border-bottom: 2px solid #d3d3d3;
+    width: 100%;
+    margin-bottom: 15%;
+    padding-bottom: 2%;
+}
+
+
+.txt{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ETOILES */
 .checked{
     color: rgb(0, 0, 0);
 }
 span{
     color: rgb(197, 197, 197);
 }
+/* fin etoiles */
 
+
+.basCadre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dimension {
+    width: 45%;
+    margin-top: 4%;
+}
+
+
+/* footer */
+.menu,.menu1{
+    display: inline-block;
+    padding: 3%;
+    width: 1%;
+    text-align: center;
+}
+
+.menu1 {
+    background-color: #222222;
+    color: white;
+}
+
+.menu:hover{
+    background-color: #222222;
+    color: white;
+}
+
+.footer_menu{
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+/* fin footer */
  
+
+
+/* SEARCH BAR */
+.input-field {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    margin-left: 30%;
+   
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 300%; */
+    color: #000000;
+    cursor: text;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #000000;
+    box-shadow: none;
+    color: #000000;
+
+}
+
+.barreTaille {
+    width: 100%;
+}
+
+input:focus + label{
+    color: #d3d3d3;
+    line-height: 1px;
+    transition: 0.3s;
+
+}
+
+input:focus{
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.input-field input:not(:focus) + label {
+    top: 0; 
+    line-height: 44px; 
+    color: #000000;
+    transition: 0.3s; 
+    z-index: 1;
+
+
+}
+/* FIN SEARCH BAR */
+
+
+/* open menu */
+/* 
+.navbar .nav-container li {
+    list-style: none;
+}
+  
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+  
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+  
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.5);
+    background-color: #222222;
+    color: aliceblue;
+    height: 150vh;
+    width: 360%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    z-index: 5;
+}
+  
+.navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+}
+   */
+
+/* FIN TEST */
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('contrasticon.png');
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 23px;
+    height: 25px;
+    border: 0;
+    background: url('contrasticon.png');
+    cursor: pointer;
+}
+
+
+.prix {
+    display: flex;
+    justify-content: space-between;
+}

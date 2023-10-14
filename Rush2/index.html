@@ -25,46 +25,315 @@
 <header>
     <!-- jusqu'a champ de recherche -->
     <section class="haut">
-        <div class="flex">
-        <img class="mt-1 w-12 h-12" id="menu" src="menu-icon.png" alt="icon hamburger du menu"></img>
-        <p class="mr-4" id="home">HOME</p>
-        <p class="mr-4" id="shop">SHOP</p>
-        <p id="magazine">MAGAZINE</p>
+        <div class="flex items-center">
+            <!-- <nav>
+                <div class="navbar">
+                    <div class="container nav-container">
+                      <input class="checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines"> -->
+                            <img class="mt-1 w-14 h-14" id="menu" src="menu_logo.png" alt="icon hamburger du menu"></img>
+                        <!-- </div>  
+                        <div class="menu-items">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Magazine</a></li>
+                        </div>
+                    </div>
+                </div>
+            </nav> -->
+        <p class="mr-8 ml-8 text-xs font-semibold" id="home"><a href="">HOME</a></p>
+        <p class="mr-8 text-xs font-semibold" id="shop"><a href="">SHOP</a></p>
+        <p class="text-xs font-semibold" id="magazine"><a href="">MAGAZINE</a></p>
         </div>
         <div class="hautDroit">
-        <img class="h-10 mr-4" id="cadis" src="cart_icon.png"></img>
-        <p id="logine">LOGIN</p>
+        <a href=""><img class="h-7 mr-4" id="cadis" src="cart_icon.png" alt="icon d'un cadis"></img></a>
+        <p class="text-xs mr-1 font-semibold" id="login"><a href="">LOGIN</a></p>
         </div>
     </section>
 </header>
 <body>
     <div class="lg:content-auto"></div>
+    <header class="dessusCadre">
+        <div class="flex">
+            <article class="w-15 mt-1">
+            <a href=""><img class="mt-1 mb-1 h-6 w-6" src="search_icon.png" alt="icnon recherche"></a>
+            </article>
+            <div class="barreSearch">
+                <div class="barreTaille">
+                <div class="input-field">
+                    <input id="name" type="text" required/>
+                    <label for="name">Search here...</label>
+                </div>
+                </div>
+            </div>
+        </div>
+        <select class="deroulant">
+            <option>Best match</option>
+            <option>Best match</option>
+            <option>Best match</option>
+        </select>
+        
+    </header>
     <!-- jusqu'a la fin des articles -->
     <div class="conteneur">
-        <div class="box"> element 1</div>
-        <div class="box"> 
-            <section class="modele">
-            <img class="h-90 w-90" src="sofa1.jpg" alt="photo d'un sofa dans un salon">
-            <h1>Coombes</h1>
-            <h2>LOUNGE</h2>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-    
-            </section>
-        
+        <div> 
+            <article class="mb-8 ml-1 text-xs opacity-60">FILTER BY</article>
+            <div>
+            <select class="deroulant2">
+                <option>Collection</option>
+                <option>Best match</option>
+                <option>Best match</option>
+            </select>
+            </div>
+            <div>
+            <select class="deroulant2">
+                <option>Color</option>
+                <option>Best match</option>
+                <option>Best match</option>
+            </select>
+            </div>
+            <div>
+            <select class="deroulant2">
+                <option>Category</option>
+                <option>Best match</option>
+                <option>Best match</option>
+            </select>
+            </div>
+            <div>Price Range</div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <div class="prix">
+                <article>$0</article>
+                <article>$10 000+</article>
+            </div>
         </div>
-        <div class="box"> element 3</div>
-        <div class="box"> element 4</div>
-        <div class="box"> element 5</div>
-        <div class="box"> element 6</div>
-        <div class="box"> element 7</div>
-        <div class="box"> element 8</div>
-    </div>
+        <!-- BOX 1 SOFA -->
+            <section class="modele">
+                <img src="sofa.png" alt="photo d'un sofa dans un salon">
+                <div class="borderline">
+                <div class="txt">
+                    <article>
+                        <h1 class="text-lg font-bold">Coombes</h1>
+                        <h2 class="text-xs text-gray-400">LOUNGE</h2>
+                    </article>
+                    <article>
+                        <h3 class="">$2,600</h3>
+                    </article>
+                </div>
+                <div class="basCadre">
+                    <article>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </article>  
+                    <article>
+                        <img class="h-7 w-7" src="addtocart_icon.png" alt="icon ajouter au panier">
+                    </article>
+                </div>
+                </div>
+            </section>
+        <!-- FIN BOX SOFA -->
+
+        <!-- BOX 2 SET TABLE -->
+        <section class="modele">
+                <img class="h-90 w-90" src="settable.png" alt="photo d'une table et 2 chaises sur une terrasse">
+                <div class="txt">
+                    <article>
+                        <h1 class="text-lg font-bold">Keeve Set</h1>
+                        <h2 class="text-xs text-gray-400">TABLES & CHAIRS</h2>
+                    </article>
+                    <article>
+                        <h3 class="">$590</h3>
+                    </article>
+                </div>
+                <div class="basCadre">
+                    <article>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </article>  
+                    <article>
+                        <img class="h-7 w-7" src="addtocart_icon.png" alt="icon ajouter au panier">
+                    </article>
+                </div>
+        </section>
+        <!-- FIN BOX SET TABLE  -->
+
+
+        <!-- BOX 3 FAUTEUIL -->
+        <section class="modele">
+            <img class="h-90 w-90" src="fauteuil.png" alt="photo d'un fauteuil sur une terrasse">
+            <div class="txt">
+                <article>
+                    <h1 class="text-lg font-bold">Nillè</h1>
+                    <h2 class="text-xs text-gray-400">ARMCHAIR</h2>
+                </article>
+                <article>
+                    <h3 class="">$950</h3>
+                </article>
+            </div>
+            <div class="basCadre">
+                <article>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </article>  
+                <article>
+                    <img class="h-7 w-7" src="addtocart_icon.png" alt="icon ajouter au panier">
+                </article>
+            </div>
+        </section>
+        <!-- FIN BOX FAUTEUIL  -->
+
+
+        <!-- BOX 4 TABLE CHEVET -->
+        <section class="modele">
+            <img class="h-50 w-50" src="tablechevet.png" alt="photo d'une table de chevet">
+            <div class="txt">
+                <article>
+                    <h1 class="text-lg font-bold">Banko</h1>
+                    <h2 class="text-xs text-gray-400">SIDE TABLE</h2>
+                </article>
+                <article>
+                    <h3 class="">$90</h3>
+                </article>
+            </div>
+            <div class="basCadre">
+                <article>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </article>  
+                <article>
+                    <img class="h-7 w-7" src="addtocart_icon.png" alt="icon ajouter au panier">
+                </article>
+            </div>
+        </section>
+        <!-- FIN BOX TABLE CHEVET  -->
+
+
+        <!-- BOX 5 BIBLIO -->
+        <section class="modele">
+            <img class="h-50 w-50" src="biblio.png" alt="photo d'une étagère bibliothèque">
+            <div class="txt">
+                <article>
+                    <h1 class="text-lg font-bold">Momo</h1>
+                    <h2 class="text-xs text-gray-400">SHELVES</h2>
+                </article>
+                <article>
+                    <h3 class="">$890</h3>
+                </article>
+            </div>
+            <div class="basCadre">
+                <article>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </article>  
+                <article>
+                    <img class="h-7 w-7" src="addtocart_icon.png" alt="icon ajouter au panier">
+                </article>
+            </div>
+        </section>
+        <!-- FIN BOX BIBLIO  -->
+        
+
+        <!-- BOX 6 CHAISE -->
+        <section class="modele">
+            <img class="h-50 w-50" src="chaise.png" alt="photo d'une chaise moderne en plastique">
+            <div class="txt">
+                <article>
+                    <h1 class="text-lg font-bold">Penemillè</h1>
+                    <h2 class="text-xs text-gray-400">CHAIR</h2>
+                </article>
+                <article>
+                    <h3 class="">$120</h3>
+                </article>
+            </div>
+            <div class="basCadre">
+                <article>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </article>  
+                <article>
+                    <img class="h-7 w-7" src="addtocart_icon.png" alt="icon ajouter au panier">
+                </article>
+            </div>
+        </section>
+        <!-- FIN BOX CHAISE  -->
+
+
+        <!-- BOX 7 ETAGERE -->
+        <section class="modele">
+            <img class="h-50 w-50" src="etagere.png" alt="photo d'une etagere murale">
+            <div class="txt">
+                <article>
+                    <h1 class="text-lg font-bold">Kappu</h1>
+                    <h2 class="text-xs text-gray-400">SHELVES</h2>
+                </article>
+                <article>
+                    <h3 class="">$420</h3>
+                </article>
+            </div>
+            <div class="basCadre">
+                <article>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </article>  
+                <article>
+                    <img class="h-7 w-7" src="addtocart_icon.png" alt="icon ajouter au panier">
+                </article>
+            </div>
+        </section>
+        <!-- FIN BOX ETAGERE  -->
+    </div>  
+    
+
+
+<!-- TEST -->
+
+<!-- FIN TEST -->
+
+
+
+
+
+
+
 </body>
 <footer>
-    <!-- diff pages -->
+    <article class="dimension">
+    <ul class="footer_menu">
+        <li class="menu1">1</li>
+        <a href = "#"><li class="menu">2</li></a>
+        <a href = "#"><li class="menu">3</li></a>
+        <a href = "#"><li class="menu">4</li></a>
+        <a href = "#"><li class="menu">5</li></a>
+        <a href = "#"><li class="menu">6</li></a>
+        <a href = "#"><li class="menu">7</li></a>
+        <a href = "#"><li class="menu">8</li></a>
+        <a href = "#"><li class="menu">9</li></a>
+        <a href = "#"><li class="menu">10</li></a>
+        <li class="menu"></li>
+        <a href = "#"><li class="menu">></li></a>
+    </ul>
+    </article>
 </footer>
 </html>
